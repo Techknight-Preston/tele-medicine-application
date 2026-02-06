@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctor_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image2"
+    android:padding="10dp"
+    tools:context=".DoctorSignUpActivity">
+
+    <EditText
+        android:id="@+id/Firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/firstname"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/Lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lastname"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@id/Firstname"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/_contact_number_id"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@id/Lastname"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:inputType="number"
+        tools:ignore="TextFields" />
+
+    <EditText
+    android:id="@+id/Specialization"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/specialization"
+    android:textColorHint="@color/black"
+    android:textColor="@color/black"
+    android:inputType="text"
+    android:layout_below="@id/ContactNumber"
+    android:layout_marginTop="20dp"
+    android:textSize="25sp"
+    android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/Specialization"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/LicenseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/_license_number"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_below="@+id/Email"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/NewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:layout_below="@id/LicenseNumber"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:padding="12dp" />
+
+
+
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:layout_below="@id/NewPassword"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:layout_below="@id/ConfirmPassword"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:layout_centerInParent="true" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

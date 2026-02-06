@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.langatahospitaltelemedicalapplication">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/LANGATAHOSPITALTELEMEDICAL"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LANGATAHOSPITALTELEMEDICALAPPLICATION">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DoctorSignUpActivity" android:exported="false"/>
+        <activity android:name=".DoctorLoginActivity" android:exported="false"/>
+        <activity android:name=".DoctorHomePageActivity" android:exported="false"/>
+        <activity android:name=".DoctorAppointmentActivity" android:exported="false"/>
+        <activity android:name=".PatientLoginActivity" android:exported="false"/>
+        <activity android:name=".PatientSignUpActivity" android:exported="false"/>
+        <activity android:name=".PatientHomePageActivity" android:exported="false"/>
+        <activity android:name=".FindDoctorActivity" android:exported="false"/>
+        <activity android:name=".AppointmentCalendarActivity" android:exported="false"/>
+        <activity android:name=".BookAppointmentActivity" android:exported="false"/>
+        <activity android:name=".EprescriptionActivity" android:exported="true"/>
+        <activity android:name=".SpecialistsActivity" android:exported="false"/>
+        <activity android:name=".SendInquiryActivity" android:exported="false"/>
+        <activity android:name=".ViewInquiriesActivity" android:exported="false"/>
+        <activity android:name=".ViewPatientRecordsActivity" android:exported="false"/>
+        <activity android:name=".AddPatientRecordActivity" android:exported="false"/>
+        <activity android:name=".ProfileActivity" android:exported="false"/>
+        <activity android:name=".Profile2Activity" android:exported="false"/>
+
+    </application>
+
+</manifest>

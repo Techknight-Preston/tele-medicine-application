@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_above="@id/welcomeText"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/image6"/>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/doctorTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:background="#0000FF"
+        android:text="@string/doctor_login"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/patientTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctorTab"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:background="#1E90FF"
+        android:text="@string/patient_login"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

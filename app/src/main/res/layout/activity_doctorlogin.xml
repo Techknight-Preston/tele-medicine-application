@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctor_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/image3"
+    tools:context=".DoctorLoginActivity">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/LicenseNumber"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/user_icon"
+        android:src="@drawable/profile1" />
+
+    <EditText
+        android:id="@+id/LicenseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/license_number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="25sp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LicenseNumber"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:hint="@string/password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:hint="@string/login"
+        android:layout_below="@id/Password"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Password"
+        android:textColor="@color/white"
+        android:hint="@string/signup"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_view_appointments"
+        android:title="@string/view_appointments"
+        />
+    <item
+        android:id="@+id/nav_patient_records"
+        android:title="@string/patient_records"
+        />
+    <item
+        android:id="@+id/nav_patient_requests"
+        android:title="@string/patient_requests"
+        />
+    <item
+        android:id="@+id/nav_Eprescription"
+        android:title="@string/eprescription"
+        />
+    <item
+        android:id="@+id/nav_add_patient_records"
+        android:title="@string/add_patient_record"
+        />
+</menu>

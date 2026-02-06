@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+        
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_patient_medical_record"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+
+        <Spinner
+            android:id="@+id/spinnerPatients"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <EditText
+            android:id="@+id/etDiagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/diagnosis"
+            android:inputType="textMultiLine"
+            android:minLines="2"/>
+
+
+        <EditText
+            android:id="@+id/etTreatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/treatment"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginTop="8dp"/>
+
+
+        <EditText
+            android:id="@+id/etMedications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/medications"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:layout_marginTop="8dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/etBloodPressure"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="@string/_bp_120_80"/>
+
+            <EditText
+                android:id="@+id/etTemperature"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="@string/temp_c"
+                android:layout_marginHorizontal="4dp"/>
+
+            <EditText
+                android:id="@+id/etHeartRate"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="@string/hr_bpm"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etDoctorNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/doctor_notes"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginTop="8dp"/>
+
+
+        <Button
+            android:id="@+id/btnSaveRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_medical_record"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
